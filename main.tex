@@ -1,0 +1,20 @@
+\documentclass[a4paper,10pt]{book}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{polski}
+\usepackage[polish]{babel}
+\usepackage{hyperref}
+%katalog rozdziałów
+\newcommand\chapterdir{chapters}
+\input{macros.tex}
+\begin{document}
+	\title{IPHiST}
+	\author{My}
+	\date{\today}
+	\maketitle
+	\tableofcontents
+	\input{\chapterdir/assumptions.tex}
+	\input{\chapterdir/requirements.tex}
+	\input{\chapterdir/target.tex}
+\end{document}
