@@ -1,5 +1,5 @@
-\chapter{Wstęp}
-\section{Opis}
+\section{Wstęp}
+\subsection{Opis}
 Dnia 5 stycznia 2031 roku Ziemia otrzymała wiadomość o chęci zawiązania współpracy z kosmicznym gatunkiem Handthów.
 Wiadomość była jasna i klarowna, skierowana do obywateli wszystkich krajów Ziemi.
 Proponowano nam podłączenie do ogólnogalaktycznej sieci urządzeń teleportujących, aby umożliwić łatwy i szybki handel z 24 innymi cywilizacjami, niektórymi nawet mniej rozwiniętymi od Ziemi.
@@ -10,38 +10,18 @@ Ważne było, abyśmy to my mieli kontrolę nad naszym urządzeniem, tak jak pa�
 Oczywiście pojawiło się bardzo wiele protestów na temat przystępowania do czegoś takiego, jednak wbrew wszystkim filmom o kosmitach tym razem wszystkie kraje zostały potraktowane po równo.
 Debata polityczna o tym, czy największe mocarstwa mogą decydować o terenach położonych poza swoimi granicami została przerwana przez Islandię, której to obywatele w 90\% zgodzili się na budowę urządzenia na swoim terenie.
 
-\section{Realizacja}
-Powołano zbiórkę pieniędzy na budowę, do której dołączyło wiele międzynarodowych korporacji.
-W zamian za to mieli mieć zniżki na korzystanie z infrastruktury.
+\subsection{Realizacja}
+Rząd Islandii zorganizował zbiórkę pieniędzy na budowę, do której dołączyło wiele międzynarodowych korporacji.
+W zamian za to mieli mieć zniżki na korzystanie z infrastruktury, a także olbrzymią reklamę.
 Niezależne grupy inżynierów zgłosiły się do pomocy przy budowie, niektórzy nawet nie oczekiwali niczego w zamian (może chcieli potem wyemigrować z Ziemi).
+
+Milcząco założono, że ponieważ przedsięwzięcie będzie się odbywać na terenie Islandii, to oni będą decydować o jego kształcie.
+Wyłoniono reprezentację polityków w kolejnym głosowaniu, która z pomocą wybranych osób będzie zarządzać finansowaniem i wymaganiami projektowymi.
+Do polityków dołączyła grupa przedstawicieli największych sponsorów, których głosy miały być proporcjonalne do ich wkładu.
 
 Teleporter będzie położony w Północno-Wschodniej części wyspy, kilkadziesiąt kilometrów od wielkiej elektrowni geotermalnej.
 Ten trudny i rozłożysty teren pozwoli na szeroką, a zarazem tanią budowę, a jednocześnie będzie tworzył naturalną barierę przed ewentualnymi atakami wojsk wrogich krajów.
 Całość ma za zadanie służyć wiele wieków, zatem musi być odporna na trzęsienia ziemi, zmiany klimatu i ataki.
 
-Nadajnik i odbiornik to dwie oddzielne infrastruktury, bardzo od siebie różne. Nasz zespół będzie miał za zadanie oprogramować jedynie nadajnik.
-Jest on bardziej skomplikowany od odbiornika, ale mniej podatny na błędy, przez co łatwiejszy w testowaniu.
-
-\section{Technologie}
-Otrzymaliśmy od Handthów dwa wielkie kryształy, jeden pozwalał na zamianę materii w energię, a drugi odwrotnie. 
-Stanowić one będą rdzeń całego urządzenia. 
-Dołączone do niego są instrukcje obsługi, a także plany budowy.
-Postanowiono na ich podstawie zbudować ziemskie kopie, a oryginały trzymać jako zapasowe, aby mieć pełną kontrolę nad ich działaniem.
-
-Interakcja polega na wysyłaniu sygnałów elektrycznych, aby sterować ich dokładną pracą.
-Można ustawić oczekiwane napięcie na wejściu i wyjściu.
-Kryształ wysyła promień w kierunku swojego wierzchołka, który zamienia znalezioną energię w pakiety energii.
-Drugą stroną wysyła energię do przekaźnika w kosmosie, który to kieruje do następnego itd. aż do odbiornika.
-Budową i programowaniem anteny, która prześle i skieruje tą energię zajmie się inny zespół.
-
-Sterujące sygnały elektryczne są binarne bez podziału na bajty.
-Można użyć standardowych wyjść kontrolerów.
-Ilość wejść i wyjść sięga kilku tysięcy.
-
-Zdecydowano się nie używać rozwiązań opartych o systemy operacyjne, a rozwiązać to za pomocą kontrolerów czasu rzeczywistego.
-\begin{itemize}
-\item Do budowy użyje się nowych procesorów otwartej architektury HUS autorstwa Politechniki Warszawskiej.
-\item Programowanie takich układów będzie w C z elementami Asemblera. 
-\item Kompilacja za pomocą \texttt{gcc-hus}.
-\item Testy jednostkowe \texttt{boost}.
-\end{itemize}
+Każda grupa będzie zajmować się jednym aspektem budowy przedsięwzięcia.
+Od zespołów mechaników i logistyków projektujących wewnętrzny transport do informatyków piszących sterowniki do anten i kontroli głównych modułów.
