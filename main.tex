@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,12pt]{article}
 \usepackage{amsmath}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -6,10 +6,14 @@
 \usepackage[polish]{babel}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 \newcommand\chapterdir{chapters}
 \input{macros.tex}
+\lhead{\includegraphics[width=0.25\textwidth]{img/logo.pdf}}
 \begin{document}
 	\input{title.tex}
+	\tableofcontents
 	\input{\chapterdir/wstep.tex}
 	\input{\chapterdir/zakres.tex}
 	\input{\chapterdir/organizacja.tex}
